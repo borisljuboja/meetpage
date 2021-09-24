@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background: #F2F2F2;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #87898d;
+    
+}
+
+.main_page{
+    display: grid;
+    padding-top: 70px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;  
+    box-sizing: border-box;
+    
+    
+  
+}
+.images{
+ display:grid;
+ justify-content: space-evenly;
+ grid-template-areas: 
+ 'woman  old boss josh';
+ 
+
+}
+.photo{
+    display: grid;
+    width: 250px;
+    height: 250px; 
+    border-radius: 8px; 
+    
+    
+}
+#woman{
+    grid-area: woman;
+}
+
+#babas{ 
+    grid-area: old;
+}
+
+#boss{
+    grid-area: boss;
+}
+
+#josh{
+    grid-area: josh;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 64px;
+    color: rgb(40,40,61);
+    
+    
+}
+h2{
+ font-size: 40px;
+ line-height: 44px;
+ color: rgb(40,40,61);
+}
+.modern_use{
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4d96a9;
+    font-weight: 700;
+}
+button{
+    border-radius: 20px;
+    font-family: 'Red Hat Display', sans-serif; 
+    font-weight: 700;
+    border-color: transparent;
+    height: 39px;
+    
+
+} 
+.teal_button{
+    color: white;
+    background-color: #4d96a9;
+    width: 150px;
+}
+.purple_button{
+    color: white;
+   background-color: #855fb1;
+   width: 90px;
+}
+.teal_button:hover{
+    cursor: pointer;
+    background-color: #8FE3F9;
+}
+.purple_button:hover{
+    cursor: pointer;
+    background-color: #D9B8FF;
+}
+span{
+    opacity: 50%;
+     
+}
+.number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; 
+ }
+ .upper{
+    position: relative;
+      top: -45px;
+   }
+  
+  .line {
+    width: 1px;
+    height: 80px;
+    background-color: #d8d8d8;
+    position: relative;
+    top: 25px;
+    display: flex;
+   
+  }
+ 
+     
+  
+.circle{
+     border: 1px solid lightgrey;
+     display: flex;
+     width: 50px;
+     height: 50px;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     position: relative;
+     top: 25px;
+     background-color: white;
+}
+  .picture{
+      border: 1px solid transparent;
+      border-radius: 50%;
+}
+
+.picture:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+  .head_photos_left{
+      margin-top: 50px;
+    display: grid;
+    justify-content: left;
+    grid-area: head_photos_left;
+    
+    
+}
+
+.header{
+    grid-area: header;
+    margin: auto;
+    text-align: center;
+    width: 65%;
+    
+}
+
+#middle{
+    position: relative;
+    top: -43px;
+}
+.head_photos_right{
+    margin-top: 50px;
+  display: grid;
+  justify-content: right;
+  grid-area: head_photos_right;}
+
+  .headd{
+      display: grid;
+      grid-template-areas: 'head_photos_left  header  head_photos_right';
+      
+  }
+  .footer{
+
+    background-image: linear-gradient(  rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8) ), url(images2/image-footer.jpg);
+    background-size: cover;
+    display: flex;
+    height: 300px;
+    text-align: left;
+    align-items: center;
+  }
+  .experiance{
+
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+  }
+  .last_paragraph{
+      color: white;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      margin-left: 90px;
+
+  }
+  .last_b{
+   margin-right: 0px;
+    background-color: #855fb1;
+    position: relative;
+    right: -280px;
+
+  }
+  .last_b:hover{
+      background-color: #D9B8FF;
+  }
+
+@media(max-width:1400px){
+    .headd{
+        display: grid;
+        grid-template-areas: 'head_photos_left head_photos_right'
+                                '  header   header ' ;
+      grid-column-gap: 30px;
+      justify-content: center;
+    }
+    .purple_button{
+      
+       position: relative;
+      left: -85px;
+      top: 10px;   
+    }
+
+    .first_p{
+        position:relative;
+        top: -25px;;
+    }
+button {
+    position: relative;
+    left: 40px;
+    top: -40px;
+}
+.footer{
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  height: 350px;
+ 
+  
+}
+
+.last_paragraph{
+    margin-top: -40px;
+}
+.last_b{
+    margin-top: 38px;
+    margin-left: 150px;
+}
+} 
+
